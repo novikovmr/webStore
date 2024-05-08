@@ -1,0 +1,16 @@
+{
+  "name": "myshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "navigo": "^8.11.1",
+    "parcel": "^2.12.0"
+  }
+}
