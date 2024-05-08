@@ -588,8 +588,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Страница продукта
 parcelHelpers.export(exports, "getProductPage", ()=>getProductPage);
-var _mainTitleJs = require("../components/mainTitle.js");
-var _deskJs = require("../components/desk.js");
+var _mainTitleJs = require("/src/js/components/mainTitle.js");
+var _deskJs = require("/src/js/components/desk.js");
 function getProductPage(title) {
     const page = document.createElement("div");
     page.classList.add("page", "product-page", "container");
@@ -599,6 +599,30 @@ function getProductPage(title) {
     return page;
 }
 
-},{"../components/mainTitle.js":"1BNwr","../components/desk.js":"9s8Qo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7U11R"], null, "parcelRequirede3a")
+},{"/src/js/components/mainTitle.js":"1BNwr","/src/js/components/desk.js":"9s8Qo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1BNwr":[function(require,module,exports) {
+// Создание главного заголовка
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getMainTitle", ()=>getMainTitle);
+function getMainTitle(text) {
+    const title = document.createElement("h1");
+    title.classList.add("main-title");
+    title.textContent = text;
+    return title;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9s8Qo":[function(require,module,exports) {
+//Создает описание товара
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getDesc", ()=>getDesc);
+function getDesc(text) {
+    const desc = document.createElement("p");
+    desc.classList.add("desc");
+    desc.textContent = text;
+    return desc;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7U11R"], null, "parcelRequirede3a")
 
 //# sourceMappingURL=product.32ff8da9.js.map

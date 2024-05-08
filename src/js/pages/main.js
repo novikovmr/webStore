@@ -1,5 +1,5 @@
-import { getProductCard } from '../components/productCard.js';
-import { getMainTitle } from '../components/mainTitle.js';
+import { getProductCard } from '/src/js/components/productCard.js';
+import { getMainTitle } from '/src/js/components/mainTitle.js';
 
 //Главная страница
 export function getMainPage() {

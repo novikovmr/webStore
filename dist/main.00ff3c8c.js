@@ -588,8 +588,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Главная страница
 parcelHelpers.export(exports, "getMainPage", ()=>getMainPage);
-var _productCardJs = require("../components/productCard.js");
-var _mainTitleJs = require("../components/mainTitle.js");
+var _productCardJs = require("/src/js/components/productCard.js");
+var _mainTitleJs = require("/src/js/components/mainTitle.js");
 function getMainPage() {
     const page = document.createElement("div");
     page.classList.add("page", "main-page", "container");
@@ -601,12 +601,12 @@ function getMainPage() {
     return page;
 }
 
-},{"../components/productCard.js":"6onfN","../components/mainTitle.js":"1BNwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6onfN":[function(require,module,exports) {
+},{"/src/js/components/productCard.js":"6onfN","/src/js/components/mainTitle.js":"1BNwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6onfN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Карточка продукта
 parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
-var _mainJs = require("../main.js");
+var _mainJs = require("/src/js/main.js");
 function getProductCard(title, price) {
     const item = document.createElement("li");
     item.classList.add("product-list__item");
@@ -631,6 +631,18 @@ function getProductCard(title, price) {
     return item;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../main.js":"1SICI"}]},["afTuC"], null, "parcelRequirede3a")
+},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1BNwr":[function(require,module,exports) {
+// Создание главного заголовка
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getMainTitle", ()=>getMainTitle);
+function getMainTitle(text) {
+    const title = document.createElement("h1");
+    title.classList.add("main-title");
+    title.textContent = text;
+    return title;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["afTuC"], null, "parcelRequirede3a")
 
 //# sourceMappingURL=main.00ff3c8c.js.map

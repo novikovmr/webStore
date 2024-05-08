@@ -1,5 +1,7 @@
-import { getMainTitle } from '../components/mainTitle.js';
-import { getDesc } from '../components/desk.js';
+import { router } from "/src/js/main.js";
+
+import { getMainTitle } from '/src/js/components/mainTitle.js';
+import { getDesc } from '/src/js/components/desk.js';
 
 //Страница с корзиной
 export function getBasketPage() {
@@ -8,8 +10,21 @@ export function getBasketPage() {
 
     const mainTitle = getMainTitle("Корзина");
 
-    const desc = getDesc("Страница в разработке")
+    const desc = getDesc("Страница в разработке");
 
-    page.append(mainTitle, desc);
+    //Кнопка оформления заказа
+    let orderLink = document.createElement("a");
+    orderLink.href ="/order";
+    orderLink.classList.add("btn");
+    orderLink.textContent = "Оформление заказа";
+    
+
+    orderLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        router.navigate('/order');
+    })
+
+
+    page.append(mainTitle, desc, orderLink);
     return page;
 }

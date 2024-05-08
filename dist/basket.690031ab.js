@@ -588,17 +588,51 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Страница с корзиной
 parcelHelpers.export(exports, "getBasketPage", ()=>getBasketPage);
-var _mainTitleJs = require("../components/mainTitle.js");
-var _deskJs = require("../components/desk.js");
+var _mainJs = require("/src/js/main.js");
+var _mainTitleJs = require("/src/js/components/mainTitle.js");
+var _deskJs = require("/src/js/components/desk.js");
 function getBasketPage() {
     const page = document.createElement("div");
     page.classList.add("page", "basket-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("\u041A\u043E\u0440\u0437\u0438\u043D\u0430");
     const desc = (0, _deskJs.getDesc)("\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435");
-    page.append(mainTitle, desc);
+    //Кнопка оформления заказа
+    let orderLink = document.createElement("a");
+    orderLink.href = "/order";
+    orderLink.classList.add("btn");
+    orderLink.textContent = "\u041E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0435 \u0437\u0430\u043A\u0430\u0437\u0430";
+    orderLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _mainJs.router).navigate("/order");
+    });
+    page.append(mainTitle, desc, orderLink);
     return page;
 }
 
-},{"../components/mainTitle.js":"1BNwr","../components/desk.js":"9s8Qo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["dR5Sr"], null, "parcelRequirede3a")
+},{"/src/js/components/mainTitle.js":"1BNwr","/src/js/components/desk.js":"9s8Qo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/main.js":"1SICI"}],"1BNwr":[function(require,module,exports) {
+// Создание главного заголовка
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getMainTitle", ()=>getMainTitle);
+function getMainTitle(text) {
+    const title = document.createElement("h1");
+    title.classList.add("main-title");
+    title.textContent = text;
+    return title;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9s8Qo":[function(require,module,exports) {
+//Создает описание товара
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getDesc", ()=>getDesc);
+function getDesc(text) {
+    const desc = document.createElement("p");
+    desc.classList.add("desc");
+    desc.textContent = text;
+    return desc;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["dR5Sr"], null, "parcelRequirede3a")
 
 //# sourceMappingURL=basket.690031ab.js.map

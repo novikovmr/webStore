@@ -1,4 +1,4 @@
-import { router } from "../main.js";
+import { router } from "/src/js/main.js";
 
 //Карточка продукта
 export function getProductCard(title, price) {

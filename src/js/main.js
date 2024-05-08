@@ -1,14 +1,9 @@
 import Navigo from 'navigo';
 
 // Components
-import { getHeader } from './components/header.js';
-import { getPageContainer } from './components/pageContainer.js';
-import { getMainTitle } from './components/mainTitle.js';
-import { getDesc } from './components/desk.js';
+import { getHeader } from '/src/js/components/header.js';
+import { getPageContainer } from '/src/js/components/pageContainer.js';
 
-
-// Pages
-// import { getProductPage } from './pages/product.js';
 
 const app = document.getElementById("app");
 
@@ -18,34 +13,60 @@ const header = getHeader(router);
 const pageContainer = getPageContainer();
 
 
-
+//Главная страница
 router.on('/', async () => {
     pageContainer.innerHTML = "";
-    const pageModuleMain = await import('./pages/main.js');
+    const pageModuleMain = await import('/src/js/pages/main.js');
     const mainPage = pageModuleMain.getMainPage();
     pageContainer.append(mainPage);
 })
 
+
+//Каталог
 router.on('/catalog', async () => {
     pageContainer.innerHTML = "";
-    const pageModuleCatalog = await import('./pages/catalog.js');
+    const pageModuleCatalog = await import('/src/js/pages/catalog.js');
     const catalogPage = pageModuleCatalog.getCatalogPage();
     pageContainer.append(catalogPage);
 })
 
+//Продукт
+router.on('/product/:title', async ({data}) => {
+    pageContainer.innerHTML = "";
+    const pageModuleBasket = await import('/src/js/pages/product.js');
+    const productPage = pageModuleBasket.getProductPage(data.title);
+    pageContainer.append(productPage);
+})
+
+//Корзина
 router.on('/basket', async () => {
     pageContainer.innerHTML = "";
-    const pageModuleProduct = await import('./pages/basket.js');
+    const pageModuleProduct = await import('/src/js/pages/basket.js');
     const basketPage = pageModuleProduct.getBasketPage();
     pageContainer.append(basketPage);
 })
 
+//Оформление
+router.on('/order', async () => {
 
-router.on('/product/:title', async ({data}) => {
+    if(true) {
+        router.navigate('/');
+        return
+    }
+
     pageContainer.innerHTML = "";
-    const pageModuleBasket = await import('./pages/product.js');
-    const productPage = pageModuleBasket.getProductPage(data.title);
-    pageContainer.append(productPage);
+    const pageModuleOrder = await import('/src/js/pages/order.js');
+    const orderPage = pageModuleOrder.getOrderPage();
+    pageContainer.append(orderPage);
+})
+
+//Страница не найдена
+
+router.notFound(async () => {
+    pageContainer.innerHTML = "";
+    const pageNotFound = await import('/src/js/pages/notFound.js');
+    const notFoundPage = pageNotFound.getNotFoundPage();
+    pageContainer.append(notFoundPage);
 })
 
 router.resolve();

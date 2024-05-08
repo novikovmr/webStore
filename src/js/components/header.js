@@ -1,4 +1,4 @@
-import { router } from "../main";
+import { router } from "/src/js/main.js";
 
 // Создать шапку
 export function getHeader() {
