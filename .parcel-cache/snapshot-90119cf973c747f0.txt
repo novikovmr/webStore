@@ -1,4 +1,5 @@
-5963
+5998
+66D:\Frontend proj\webStore\src\js\components\mainTitle\mainTitle.js133596626107447710 0
 70D:\Frontend proj\webStore\node_modules\source-map\lib\binary-search.js133596490952687309 0
 79D:\Frontend proj\webStore\node_modules\htmlnano\lib\modules\removeUnusedCss.cjs133596491034178301 0
 59D:\Frontend proj\webStore\node_modules\resolve-from\license133596490900277876 0
@@ -6,7 +7,7 @@
 45D:\Frontend proj\webStore\node_modules\@babel133596490896088585 1
 85D:\Frontend proj\webStore\node_modules\css-tree\cjs\syntax\config\parser-selector.cjs133596491096222753 0
 108D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDoctype.js133596491049353463 0
-30D:\Frontend proj\webStore\dist133596620244449670 1
+30D:\Frontend proj\webStore\dist133596653640781074 1
 47D:\Frontend proj\webStore\node_modules\escalade133596490944203550 1
 48D:\Frontend proj\webStore\node_modules\is-number133596490903995447 1
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\VU.js133596491186955206 0
@@ -18,7 +19,7 @@
 88D:\Frontend proj\webStore\node_modules\dom-serializer\node_modules\entities\lib\index.js133596490925881282 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\KN.js133596491157207336 0
 67D:\Frontend proj\webStore\node_modules\@parcel\workers\lib\child.js133596490975640851 0
-29D:\Frontend proj\webStore\src133596493517419864 1
+29D:\Frontend proj\webStore\src133596648048663939 1
 62D:\Frontend proj\webStore\node_modules\json5\dist\index.min.js133596490925901233 0
 96D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\generator\token-before.cjs133596491097050549 0
 62D:\Frontend proj\webStore\node_modules\react-error-overlay\lib133596490916648279 1
@@ -65,7 +66,7 @@
 81D:\Frontend proj\webStore\node_modules\lmdb\node_modules\node-addon-api\README.md133596491033204031 0
 49D:\Frontend proj\webStore\node_modules\nullthrows133596490954052483 1
 100D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\svgo-node.js133596491072893914 0
-49D:\Frontend proj\webStore\src\js\pages\product.js133596607032907991 0
+49D:\Frontend proj\webStore\src\js\pages\product.js133596628604071589 0
 81D:\Frontend proj\webStore\node_modules\.bin\node-gyp-build-optional-packages-test133596491187689769 0
 76D:\Frontend proj\webStore\node_modules\@parcel\core\test\BundleGraph.test.js133596491062343537 0
 70D:\Frontend proj\webStore\node_modules\css-tree\lib\syntax\node\Raw.js133596491139934155 0
@@ -98,7 +99,7 @@
 79D:\Frontend proj\webStore\node_modules\css-select\node_modules\entities\LICENSE133596490926415293 0
 70D:\Frontend proj\webStore\node_modules\css-tree\lib\tokenizer\types.js133596491144102428 0
 83D:\Frontend proj\webStore\node_modules\@swc\helpers\_\_read_only_error\package.json133596491152607618 0
-46D:\Frontend proj\webStore\src\styles\style.css133596615302602674 0
+46D:\Frontend proj\webStore\src\styles\style.css133596630116592304 0
 87D:\Frontend proj\webStore\node_modules\css-select\lib\esm\pseudo-selectors\aliases.d.ts133596491070812322 0
 62D:\Frontend proj\webStore\node_modules\svgo\lib\stringifier.js133596491025818001 0
 80D:\Frontend proj\webStore\node_modules\csso\lib\restructure\8-restructRuleset.js133596491062014513 0
@@ -118,7 +119,7 @@
 56D:\Frontend proj\webStore\node_modules\json5\lib\util.js133596490983286557 0
 101D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\svgo\tools.js133596491081874335 0
 61D:\Frontend proj\webStore\node_modules\import-fresh\readme.md133596490907863197 0
-49D:\Frontend proj\webStore\src\js\pages\catalog.js133596606849131260 0
+49D:\Frontend proj\webStore\src\js\pages\catalog.js133596626491554467 0
 70D:\Frontend proj\webStore\node_modules\@parcel\reporter-dev-server\lib133596491034367778 1
 48D:\Frontend proj\webStore\node_modules\lmdb\dist133596491107589575 1
 74D:\Frontend proj\webStore\node_modules\@parcel\reporter-dev-server\LICENSE133596490926455151 0
@@ -130,7 +131,7 @@
 91D:\Frontend proj\webStore\node_modules\css-select\node_modules\domhandler\lib\esm\node.d.ts133596491011457328 0
 64D:\Frontend proj\webStore\node_modules\htmlparser2\lib\Parser.js133596490915209782 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\PR.js133596491161649750 0
-43D:\Frontend proj\webStore\src\js\components133592300842851958 1
+43D:\Frontend proj\webStore\src\js\components133596646732481956 1
 62D:\Frontend proj\webStore\node_modules\micromatch\package.json133596490901130439 0
 90D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\custom-format-infer-type133596491131771051 1
 66D:\Frontend proj\webStore\node_modules\@parcel\events\lib\types.js133596490991427666 0
@@ -139,18 +140,18 @@
 89D:\Frontend proj\webStore\node_modules\css-select\node_modules\entities\lib\esm\escape.js133596491021018022 0
 53D:\Frontend proj\webStore\node_modules\dom-serializer133596490983336384 1
 45D:\Frontend proj\webStore\node_modules\stable133596490914643182 1
-40D:\Frontend proj\webStore\src\js\main.js133596619776070892 0
+40D:\Frontend proj\webStore\src\js\main.js133596627947836946 0
 64D:\Frontend proj\webStore\node_modules\@parcel\core\src\index.js133596491084524111 0
 62D:\Frontend proj\webStore\node_modules\csso\lib\clean\index.js133596491077459162 0
 38D:\Frontend proj\webStore\src\js\pages133596618559022505 1
 75D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webvtt.js133596491187348794 0
 92D:\Frontend proj\webStore\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest_enc2.c133596491072569700 0
 67D:\Frontend proj\webStore\node_modules\posthtml-parser\changelog.md133596490949858830 0
-48D:\Frontend proj\webStore\src\js\pages\basket.js133596614645261514 0
+48D:\Frontend proj\webStore\src\js\pages\basket.js133596626655746754 0
 65D:\Frontend proj\webStore\node_modules\color-convert\CHANGELOG.md133596490899196012 0
 56D:\Frontend proj\webStore\node_modules\lmdb\node_modules133596490896148411 1
 117D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Combinator.js133596491001312289 0
-46D:\Frontend proj\webStore\src\js\pages\main.js133596606941683048 0
+46D:\Frontend proj\webStore\src\js\pages\main.js133596629432584035 0
 63D:\Frontend proj\webStore\node_modules\domutils\lib\querying.js133596490936850826 0
 43D:\Frontend proj\webStore\node_modules\svgo133596491041365743 1
 83D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-dir-pseudo.js133596491112433077 0
@@ -173,7 +174,6 @@
 88D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-scroll-behavior.js133596491136558016 0
 83D:\Frontend proj\webStore\node_modules\lmdb\node_modules\node-addon-api\common.gypi133596490943314086 0
 86D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\lib\lexer\generic.js133596491121595594 0
-51D:\Frontend proj\webStore\src\js\components\desk.js133592300917376161 0
 98D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\syntax\node\UnicodeRange.cjs133596491097304267 0
 65D:\Frontend proj\webStore\node_modules\@parcel\workers\src\bus.js133596490962895318 0
 101D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\convertor133596491066511916 1
@@ -182,7 +182,6 @@
 67D:\Frontend proj\webStore\node_modules\node-releases\data\processed133596490899294576 1
 75D:\Frontend proj\webStore\node_modules\htmlnano\lib\modules\mergeStyles.cjs133596490998462976 0
 80D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_object_spread_props.cjs133596491067345643 0
-53D:\Frontend proj\webStore\src\js\components\header.js133596606465842780 0
 90D:\Frontend proj\webStore\node_modules\@babel\highlight\node_modules\has-flag\package.json133596490898700686 0
 73D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webp.js133596491187310750 0
 57D:\Frontend proj\webStore\node_modules\@parcel\fs\LICENSE133596490939569611 0
@@ -193,14 +192,12 @@
 57D:\Frontend proj\webStore\node_modules\chrome-trace-event133596490936025283 1
 67D:\Frontend proj\webStore\node_modules\css-select\lib\esm\sort.d.ts133596491084544158 0
 77D:\Frontend proj\webStore\node_modules\node-releases\data\processed\envs.json133596490899473975 0
-58D:\Frontend proj\webStore\src\js\components\productCard.js133596606678504655 0
 54D:\Frontend proj\webStore\node_modules\lmdb\caching.js133596491103241443 0
 57D:\Frontend proj\webStore\node_modules\picomatch\index.js133596490901730304 0
 83D:\Frontend proj\webStore\node_modules\csso\cjs\restructure\prepare\specificity.cjs133596491041006929 0
 43D:\Frontend proj\webStore\node_modules\.bin133596491187709702 1
 74D:\Frontend proj\webStore\node_modules\postcss-value-parser\lib\index.d.ts133596490966310210 0
 60D:\Frontend proj\webStore\node_modules\htmlnano\package.json133596491061924814 0
-56D:\Frontend proj\webStore\src\js\components\mainTitle.js133592299958520277 0
 55D:\Frontend proj\webStore\node_modules\timsort\index.js133596490917330758 0
 65D:\Frontend proj\webStore\node_modules\csso\cjs\replace\index.cjs133596491033214084 0
 74D:\Frontend proj\webStore\node_modules\type-fest\source\literal-union.d.ts133596491011437333 0
@@ -216,7 +213,6 @@
 89D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-overflow-overlay.js133596491132846260 0
 45D:\Frontend proj\webStore\node_modules\dotenv133596490954710608 1
 108D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\replace\Dimension.js133596491034347845 0
-60D:\Frontend proj\webStore\src\js\components\pageContainer.js133592298933342491 0
 65D:\Frontend proj\webStore\node_modules\css-what\lib\es\index.d.ts133596491013358634 0
 54D:\Frontend proj\webStore\src\js\.vscode\settings.json133593707412825662 0
 72D:\Frontend proj\webStore\node_modules\@swc\helpers\_\_wrap_native_super133596491153205584 1
@@ -428,6 +424,7 @@
 62D:\Frontend proj\webStore\node_modules\entities\lib\index.d.ts133596491033843081 0
 70D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_using_ctx.cjs133596491086512353 0
 46D:\Frontend proj\webStore\node_modules\is-json133596490931627803 1
+60D:\Frontend proj\webStore\src\js\components\header\header.js133596653537945684 0
 104D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\api\inheritance.json133596490984312505 0
 48D:\Frontend proj\webStore\node_modules\js-tokens133596490914892353 1
 103D:\Frontend proj\webStore\node_modules\css-select\node_modules\entities\lib\esm\decode_codepoint.js.map133596491034278082 0
@@ -465,7 +462,7 @@
 85D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-focus-within.js133596491117649353 0
 58D:\Frontend proj\webStore\node_modules\json5\lib\util.d.ts133596491016723317 0
 43D:\Frontend proj\webStore\node_modules\lmdb133596491115507757 1
-50D:\Frontend proj\webStore\src\js\pages\notFound.js133596620244469576 0
+50D:\Frontend proj\webStore\src\js\pages\notFound.js133596626391218068 0
 68D:\Frontend proj\webStore\node_modules\lmdb\dependencies\lz4\LICENSE133596490997951655 0
 88D:\Frontend proj\webStore\node_modules\@swc\helpers\src\_initializer_define_property.mjs133596491153790669 0
 56D:\Frontend proj\webStore\node_modules\lmdb\dependencies133596491100079273 1
@@ -753,7 +750,7 @@
 77D:\Frontend proj\webStore\node_modules\type-fest\source\iterable-element.d.ts133596491003083200 0
 73D:\Frontend proj\webStore\node_modules\msgpackr\dist\index-no-eval.min.js133596490986512565 0
 84D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-placeholder.js133596491134689214 0
-48D:\Frontend proj\webStore\dist\order.16121d68.js133596619304436591 0
+48D:\Frontend proj\webStore\dist\order.16121d68.js133596652992596773 0
 55D:\Frontend proj\webStore\node_modules\type-fest\source133596491042118155 1
 97D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\lexer\generic-an-plus-b.cjs133596491050272048 0
 68D:\Frontend proj\webStore\node_modules\type-fest\source\entries.d.ts133596490985020805 0
@@ -919,7 +916,7 @@
 66D:\Frontend proj\webStore\node_modules\react-error-overlay\LICENSE133596490906795792 0
 120D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\SyntaxError.js133596491097324197 0
 95D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\parser\parse-selector.cjs133596491086574415 0
-47D:\Frontend proj\webStore\src\js\pages\order.js133596610405638421 0
+47D:\Frontend proj\webStore\src\js\pages\order.js133596626356695979 0
 93D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\src133596491085266218 1
 58D:\Frontend proj\webStore\node_modules\tslib\tslib.es6.mjs133596490982778273 0
 58D:\Frontend proj\webStore\node_modules\@swc\helpers\_\_get133596491140646280 1
@@ -1281,6 +1278,7 @@
 59D:\Frontend proj\webStore\node_modules\micromatch\README.md133596490914433849 0
 100D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\index.d.ts133596491034507311 0
 72D:\Frontend proj\webStore\node_modules\node-addon-api\node_addon_api.gyp133596490899464009 0
+70D:\Frontend proj\webStore\src\js\components\productCard\productCard.js133596629684456675 0
 77D:\Frontend proj\webStore\node_modules\css-tree\lib\definition-syntax\walk.js133596491152687319 0
 89D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\spellcheck-attribute.js133596491163099512 0
 54D:\Frontend proj\webStore\node_modules\source-map\dist133596491033033746 1
@@ -1361,6 +1359,7 @@
 70D:\Frontend proj\webStore\node_modules\@swc\helpers\_\_async_generator133596491127489724 1
 75D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_async_iterator.cjs133596490983525761 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\BE.js133596491065672845 0
+40D:\Frontend proj\webStore\src\assets\img133596649242819446 1
 130D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts.map133596491026107682 0
 73D:\Frontend proj\webStore\node_modules\csso\cjs\replace\property\font.cjs133596491022602231 0
 64D:\Frontend proj\webStore\node_modules\semver\ranges\simplify.js133596491044833979 0
@@ -1645,6 +1644,7 @@
 110D:\Frontend proj\webStore\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages.cmd133596491187679796 0
 95D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\compress.js133596491002893386 0
 53D:\Frontend proj\webStore\node_modules\parcel\LICENSE133596490926395353 0
+57D:\Frontend proj\webStore\src\js\components\logo\logo.css133596653235186201 0
 94D:\Frontend proj\webStore\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\lmdb.h133596491097120312 0
 71D:\Frontend proj\webStore\node_modules\css-tree\cjs\tokenizer\names.cjs133596491086283181 0
 58D:\Frontend proj\webStore\node_modules\parcel\package.json133596490983615353 0
@@ -1661,6 +1661,7 @@
 56D:\Frontend proj\webStore\node_modules\parcel\src\bin.js133596490955136392 0
 56D:\Frontend proj\webStore\node_modules\parcel\src\cli.js133596490982738437 0
 75D:\Frontend proj\webStore\node_modules\@swc\helpers\esm\_super_prop_base.js133596491112940765 0
+51D:\Frontend proj\webStore\dist\product.0009d6e3.css133596652992586797 0
 75D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webusb.js133596491187338829 0
 110D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\replace\property\border.js133596490992027165 0
 78D:\Frontend proj\webStore\node_modules\@parcel\transformer-babel\lib\config.js133596490983376248 0
@@ -1736,6 +1737,7 @@
 65D:\Frontend proj\webStore\node_modules\nth-check\lib\index.js.map133596490994504030 0
 98D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\lib\utils\create-custom-error.js133596491105388581 0
 67D:\Frontend proj\webStore\node_modules\nth-check\lib\parse.d.ts.map133596491000481949 0
+50D:\Frontend proj\webStore\src\js\components\header133596623068672759 1
 88D:\Frontend proj\webStore\node_modules\@swc\helpers\src\_possible_constructor_return.mjs133596491153970068 0
 56D:\Frontend proj\webStore\node_modules\lmdb\util\when.js133596491106240530 0
 75D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\glob-like133596491025312485 1
@@ -2004,7 +2006,7 @@
 59D:\Frontend proj\webStore\node_modules\@parcel\packager-svg133596490962085570 1
 60D:\Frontend proj\webStore\node_modules\msgpackr\unpack.d.cts133596490983535729 0
 64D:\Frontend proj\webStore\node_modules\lmdb\src\v8-functions.cpp133596491096652932 0
-53D:\Frontend proj\webStore\dist\index.4ee4707b.css.map133596619304456525 0
+53D:\Frontend proj\webStore\dist\index.4ee4707b.css.map133596652992556906 0
 59D:\Frontend proj\webStore\node_modules\msgpackr\unpack.d.ts133596491067028032 0
 103D:\Frontend proj\webStore\node_modules\@swc\helpers\_\_class_static_private_field_spec_get\package.json133596491134852486 0
 74D:\Frontend proj\webStore\node_modules\mdn-data\css\properties.schema.json133596491015530965 0
@@ -2159,7 +2161,7 @@
 59D:\Frontend proj\webStore\node_modules\browserslist\LICENSE133596490898690717 0
 96D:\Frontend proj\webStore\node_modules\@parcel\runtime-js\src\helpers\browser\import-polyfill.js133596491033556092 0
 74D:\Frontend proj\webStore\node_modules\lmdb\dependencies\lz4\lib\lz4file.c133596491041948730 0
-50D:\Frontend proj\webStore\dist\product.32ff8da9.js133596619304466495 0
+50D:\Frontend proj\webStore\dist\product.32ff8da9.js133596652992467197 0
 115D:\Frontend proj\webStore\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts\index.linux-x64-musl.node133596491086624250 0
 80D:\Frontend proj\webStore\node_modules\csso\cjs\replace\property\font-weight.cjs133596491018166542 0
 100D:\Frontend proj\webStore\node_modules\@parcel\package-manager\test\fixtures\packages\a\package.json133596491048556018 0
@@ -2249,6 +2251,7 @@
 79D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\lib\generator133596491142939441 1
 79D:\Frontend proj\webStore\node_modules\json-parse-even-better-errors\LICENSE.md133596490906845874 0
 50D:\Frontend proj\webStore\node_modules\js-yaml\bin133596490988415892 1
+53D:\Frontend proj\webStore\dist\order.7d41ea80.css.map133596652992576835 0
 80D:\Frontend proj\webStore\node_modules\css-tree\lib\syntax\node\AtrulePrelude.js133596491103518732 0
 59D:\Frontend proj\webStore\node_modules\js-yaml\package.json133596491034646849 0
 76D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\syntax133596491069372332 1
@@ -2311,7 +2314,7 @@
 58D:\Frontend proj\webStore\node_modules\is-json\.travis.yml133596490926614619 0
 85D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\cookie-store-api.js133596491097344134 0
 55D:\Frontend proj\webStore\node_modules\is-json\index.js133596490925861348 0
-48D:\Frontend proj\webStore\dist\index.18dbc454.js133596619776839108 0
+48D:\Frontend proj\webStore\dist\index.18dbc454.js133596653536716712 0
 54D:\Frontend proj\webStore\node_modules\is-json\LICENSE133596490914433849 0
 56D:\Frontend proj\webStore\node_modules\is-json\README.md133596490903417277 0
 107D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\convertor\create.js133596491015887604 0
@@ -2451,6 +2454,7 @@
 76D:\Frontend proj\webStore\node_modules\css-tree\lib\syntax\node\Dimension.js133596491119303062 0
 65D:\Frontend proj\webStore\node_modules\domutils\lib\querying.d.ts133596491023505878 0
 74D:\Frontend proj\webStore\node_modules\htmlnano\lib\modules\minifyUrls.mjs133596491088724071 0
+75D:\Frontend proj\webStore\src\js\components\pageContainer\pageContainer.css133596627719162570 0
 88D:\Frontend proj\webStore\node_modules\htmlnano\lib\modules\normalizeAttributeValues.mjs133596491089343699 0
 85D:\Frontend proj\webStore\node_modules\htmlnano\lib\modules\removeAttributeQuotes.cjs133596491026446857 0
 80D:\Frontend proj\webStore\node_modules\css-tree\lib\utils\create-custom-error.js133596491106887821 0
@@ -2729,6 +2733,7 @@
 79D:\Frontend proj\webStore\node_modules\dom-serializer\node_modules\entities\lib133596491002874576 1
 135D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg\node_modules\parcel-config-local\package.json133596491134689214 0
 83D:\Frontend proj\webStore\node_modules\dom-serializer\node_modules\entities\LICENSE133596490898700686 0
+70D:\Frontend proj\webStore\src\js\components\navigationLink\navLink.css133596646235781547 0
 85D:\Frontend proj\webStore\node_modules\dom-serializer\node_modules\entities\readme.md133596490991507391 0
 91D:\Frontend proj\webStore\node_modules\dom-serializer\node_modules\entities\lib\decode.d.ts133596490996841682 0
 89D:\Frontend proj\webStore\node_modules\dom-serializer\node_modules\entities\lib\decode.js133596490902130383 0
@@ -3045,6 +3050,7 @@
 86D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\loading-lazy-attr.js133596491157681134 0
 60D:\Frontend proj\webStore\node_modules\css-what\package.json133596490983027429 0
 98D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\syntax\node\TypeSelector.cjs133596491097204598 0
+48D:\Frontend proj\webStore\src\js\components\logo133596646819057252 1
 91D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Value.cjs133596491097424348 0
 96D:\Frontend proj\webStore\node_modules\csso\node_modules\css-tree\cjs\syntax\node\WhiteSpace.cjs133596491099881981 0
 70D:\Frontend proj\webStore\node_modules\css-tree\lib\lexer\structure.js133596491141814318 0
@@ -3133,7 +3139,7 @@
 60D:\Frontend proj\webStore\node_modules\csso\cjs\compress.cjs133596491002527110 0
 57D:\Frontend proj\webStore\node_modules\csso\cjs\index.cjs133596491032864295 0
 59D:\Frontend proj\webStore\node_modules\csso\cjs\restructure133596491042148105 1
-49D:\Frontend proj\webStore\dist\basket.690031ab.js133596619304396727 0
+49D:\Frontend proj\webStore\dist\basket.690031ab.js133596652992497096 0
 77D:\Frontend proj\webStore\node_modules\csso\cjs\restructure\1-mergeAtrule.cjs133596490899444084 0
 92D:\Frontend proj\webStore\node_modules\css-select\node_modules\domutils\lib\esm\package.json133596491021648572 0
 85D:\Frontend proj\webStore\node_modules\csso\cjs\restructure\2-initialMergeRuleset.cjs133596490905658806 0
@@ -3267,6 +3273,7 @@
 69D:\Frontend proj\webStore\node_modules\css-tree\cjs\walker\create.cjs133596491034032073 0
 74D:\Frontend proj\webStore\node_modules\css-tree\lib\syntax\atrule\index.js133596491128863636 0
 73D:\Frontend proj\webStore\node_modules\css-tree\lib\syntax\atrule\nest.js133596491134699234 0
+56D:\Frontend proj\webStore\src\js\components\desk\desk.js133596624930969148 0
 88D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\dist133596491032844351 1
 77D:\Frontend proj\webStore\node_modules\css-tree\lib\syntax\atrule\supports.js133596491142650441 0
 68D:\Frontend proj\webStore\node_modules\css-tree\lib\parser\create.js133596491111198177 0
@@ -3393,7 +3400,7 @@
 76D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\svg-img.js133596491182178929 0
 74D:\Frontend proj\webStore\node_modules\css-tree\cjs\syntax\atrule\page.cjs133596491087738434 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\GW.js133596491155088057 0
-49D:\Frontend proj\webStore\dist\index.f78bd7b2.css133596619304446559 0
+49D:\Frontend proj\webStore\dist\index.f78bd7b2.css133596652992556906 0
 70D:\Frontend proj\webStore\node_modules\@parcel\core\lib\Environment.js133596491077451235 0
 69D:\Frontend proj\webStore\node_modules\css-tree\cjs\parser\create.cjs133596491032780807 0
 80D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-filters.js133596491115347741 0
@@ -3556,6 +3563,7 @@
 91D:\Frontend proj\webStore\node_modules\css-select\node_modules\domutils\lib\querying.js.map133596491048695778 0
 68D:\Frontend proj\webStore\node_modules\@lmdb\lmdb-win32-x64\index.js133596490914473745 0
 90D:\Frontend proj\webStore\node_modules\css-select\node_modules\domutils\lib\stringify.d.ts133596491069551789 0
+49D:\Frontend proj\webStore\dist\index.2212206d.css133596653640771098 0
 94D:\Frontend proj\webStore\node_modules\css-select\node_modules\domutils\lib\stringify.d.ts.map133596491050212251 0
 88D:\Frontend proj\webStore\node_modules\css-select\node_modules\domutils\lib\stringify.js133596491010128034 0
 75D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webgl2.js133596491187257126 0
@@ -3853,6 +3861,7 @@
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\BI.js133596491069836240 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\BJ.js133596491071302443 0
 94D:\Frontend proj\webStore\node_modules\@swc\helpers\src\_class_static_private_field_update.mjs133596491153601309 0
+51D:\Frontend proj\webStore\src\assets\img\basket.svg133596648550330729 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\BM.js133596491073792195 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\BN.js133596491074860702 0
 81D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\offline-apps.js133596491161093576 0
@@ -3875,7 +3884,7 @@
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\DZ.js133596491153511597 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\EC.js133596491153521564 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\EG.js133596491153551458 0
-50D:\Frontend proj\webStore\dist\catalog.bae1f746.js133596619304436591 0
+50D:\Frontend proj\webStore\dist\catalog.bae1f746.js133596652992586797 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\ER.js133596491153651131 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\FJ.js133596491154099643 0
 71D:\Frontend proj\webStore\node_modules\@parcel\events\lib\Disposable.js133596490960242137 0
@@ -3945,6 +3954,7 @@
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\MV.js133596491160465681 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\MY.js133596491160485614 0
 87D:\Frontend proj\webStore\node_modules\@swc\helpers\src\_class_private_field_update.mjs133596491153531525 0
+53D:\Frontend proj\webStore\dist\index.2212206d.css.map133596653640781074 0
 50D:\Frontend proj\webStore\node_modules\.bin\parcel133596491187679796 0
 70D:\Frontend proj\webStore\node_modules\caniuse-lite\data\regions\MZ.js133596491160495577 0
 113D:\Frontend proj\webStore\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts\index.darwin-arm64.node133596491041741801 0
@@ -4182,6 +4192,7 @@
 82D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-scrollbar.js133596491139444623 0
 77D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-sel2.js133596491140092516 0
 79D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-sticky.js133596491141112966 0
+67D:\Frontend proj\webStore\src\js\components\mainTitle\mainTitle.css133596626026444094 0
 94D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\document-scrollingelement.js133596491153365046 0
 76D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\streams.js133596491172692136 0
 85D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\css-supports-api.js133596491141213851 0
@@ -4439,7 +4450,7 @@
 102D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\compile.d.ts133596491034158373 0
 78D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\web-share.js133596491187227233 0
 77D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webauthn.js133596491187237199 0
-51D:\Frontend proj\webStore\dist\main.00ff3c8c.js.map133596619304416663 0
+51D:\Frontend proj\webStore\dist\main.00ff3c8c.js.map133596652992507064 0
 75D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webgpu.js133596491187277063 0
 64D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_get.cjs133596491051204613 0
 75D:\Frontend proj\webStore\node_modules\caniuse-lite\data\features\webhid.js133596491187287026 0
@@ -4475,6 +4486,7 @@
 92D:\Frontend proj\webStore\node_modules\@parcel\transformer-postcss\src\PostCSSTransformer.js133596490985030725 0
 59D:\Frontend proj\webStore\node_modules\argparse\argparse.js133596490909977010 0
 51D:\Frontend proj\webStore\node_modules\argparse\lib133596490926260576 1
+56D:\Frontend proj\webStore\dist\notFound.56fd5e51.css.map133596652992616701 0
 60D:\Frontend proj\webStore\node_modules\argparse\package.json133596490938454308 0
 57D:\Frontend proj\webStore\node_modules\argparse\README.md133596490964419330 0
 63D:\Frontend proj\webStore\node_modules\argparse\lib\textwrap.js133596490926614619 0
@@ -4726,7 +4738,7 @@
 87D:\Frontend proj\webStore\node_modules\@swc\helpers\esm\_initializer_define_property.js133596491103241443 0
 70D:\Frontend proj\webStore\node_modules\@swc\helpers\esm\_instanceof.js133596491103448963 0
 83D:\Frontend proj\webStore\node_modules\@swc\helpers\esm\_interop_require_default.js133596491103518732 0
-54D:\Frontend proj\webStore\dist\catalog.bae1f746.js.map133596619304456525 0
+54D:\Frontend proj\webStore\dist\catalog.bae1f746.js.map133596652992616701 0
 78D:\Frontend proj\webStore\node_modules\@swc\helpers\esm\_is_native_function.js133596491103915278 0
 82D:\Frontend proj\webStore\node_modules\@babel\highlight\node_modules\color-convert133596490931709048 1
 77D:\Frontend proj\webStore\node_modules\@swc\helpers\esm\_iterable_to_array.js133596491105348701 0
@@ -4761,6 +4773,7 @@
 72D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_await_value.cjs133596490991387800 0
 88D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_check_private_redeclaration.cjs133596490993848934 0
 94D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_class_check_private_static_access.cjs133596491015491097 0
+69D:\Frontend proj\webStore\src\js\components\navigationLink\navLink.js133596645190816426 0
 84D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_class_private_field_get.cjs133596491032983889 0
 87D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_class_private_field_update.cjs133596491034298010 0
 85D:\Frontend proj\webStore\node_modules\@swc\helpers\cjs\_class_private_method_set.cjs133596491034656814 0
@@ -5084,7 +5097,7 @@
 74D:\Frontend proj\webStore\node_modules\@parcel\runtime-js\src\helpers\node133596491045627719 1
 89D:\Frontend proj\webStore\node_modules\@parcel\runtime-js\src\helpers\worker\js-loader.js133596491040687993 0
 89D:\Frontend proj\webStore\node_modules\@parcel\runtime-js\src\helpers\node\html-loader.js133596491032973930 0
-53D:\Frontend proj\webStore\dist\index.f78bd7b2.css.map133596619304466495 0
+53D:\Frontend proj\webStore\dist\index.f78bd7b2.css.map133596652992576835 0
 110D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css\properties.schema.json133596491011097308 0
 89D:\Frontend proj\webStore\node_modules\@parcel\runtime-js\src\helpers\node\wasm-loader.js133596491046064649 0
 91D:\Frontend proj\webStore\node_modules\@parcel\runtime-js\src\helpers\browser\css-loader.js133596490998542674 0
@@ -5172,6 +5185,7 @@
 63D:\Frontend proj\webStore\node_modules\@parcel\packager-svg\src133596490949552431 1
 63D:\Frontend proj\webStore\node_modules\@parcel\packager-raw\lib133596490931101436 1
 67D:\Frontend proj\webStore\node_modules\@parcel\packager-raw\LICENSE133596490926220715 0
+48D:\Frontend proj\webStore\src\js\components\desk133596624710573990 1
 72D:\Frontend proj\webStore\node_modules\@parcel\packager-raw\package.json133596490962895318 0
 71D:\Frontend proj\webStore\node_modules\@parcel\packager-js\package.json133596491033234037 0
 77D:\Frontend proj\webStore\node_modules\@parcel\packager-js\src\.eslintrc.json133596491032884206 0
@@ -5242,6 +5256,7 @@
 79D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\svgo133596491084776305 1
 84D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\svgo\dist133596491072873981 1
 83D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib133596491086342921 1
+49D:\Frontend proj\webStore\dist\order.7d41ea80.css133596652992556906 0
 92D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\svgo\package.json133596491084544158 0
 87D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins133596491069691815 1
 89D:\Frontend proj\webStore\node_modules\@parcel\optimizer-svgo\node_modules\svgo\README.md133596491085286130 0
@@ -5531,6 +5546,7 @@
 109D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\css\units.schema.json133596491034012131 0
 100D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\api\index.js133596490899324476 0
 108D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\api\inheritance.json133596490984472474 0
+36D:\Frontend proj\webStore\src\assets133596648105601294 1
 115D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\api\inheritance.schema.json133596490988116911 0
 93D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\clean133596491054053953 1
 99D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\compress.js133596491002893386 0
@@ -5539,6 +5555,7 @@
 99D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure133596491051174695 1
 76D:\Frontend proj\webStore\node_modules\@parcel\core\src\SymbolPropagation.js133596491113130129 0
 124D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\2-initialMergeRuleset.js133596490903975520 0
+48D:\Frontend proj\webStore\dist\logo.e1e57082.svg133596652992337631 0
 122D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\4-restructShorthand.js133596490926000886 0
 118D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\6-restructBlock.js133596490932296745 0
 120D:\Frontend proj\webStore\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\8-restructRuleset.js133596490960381164 0
@@ -5767,6 +5784,7 @@
 100D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file\src133596491086203387 1
 109D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file\src\index.js133596491086233330 0
 108D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-target-source-missing\package.json133596491134350671 0
+51D:\Frontend proj\webStore\dist\catalog.f682593a.css133596652992556906 0
 102D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\package.json133596491133792237 0
 102D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\src\index.js133596491085414495 0
 101D:\Frontend proj\webStore\node_modules\@parcel\core\test\fixtures\invalid-source-missing\package.json133596491133642777 0
@@ -5953,12 +5971,29 @@
 52D:\Frontend proj\webStore\node_modules\.bin\svgo.ps1133596491187709702 0
 66D:\Frontend proj\webStore\node_modules\.bin\update-browserslist-db133596491187689769 0
 70D:\Frontend proj\webStore\node_modules\.bin\update-browserslist-db.cmd133596491187689769 0
-47D:\Frontend proj\webStore\dist\main.00ff3c8c.js133596619304396727 0
-53D:\Frontend proj\webStore\dist\basket.690031ab.js.map133596619304420319 0
-41D:\Frontend proj\webStore\dist\index.html133596619304436591 0
-49D:\Frontend proj\webStore\dist\index.4ee4707b.css133596619304436591 0
-52D:\Frontend proj\webStore\dist\order.16121d68.js.map133596619304456525 0
-54D:\Frontend proj\webStore\dist\product.32ff8da9.js.map133596619304486427 0
-52D:\Frontend proj\webStore\dist\index.18dbc454.js.map133596619776849081 0
-51D:\Frontend proj\webStore\dist\notFound.4f16eca9.js133596620244379877 0
-55D:\Frontend proj\webStore\dist\notFound.4f16eca9.js.map133596620244439681 0
+61D:\Frontend proj\webStore\src\js\components\header\header.css133596653657230649 0
+57D:\Frontend proj\webStore\src\js\components\desk\desk.css133596624792760690 0
+53D:\Frontend proj\webStore\src\js\components\mainTitle133596625919392061 1
+57D:\Frontend proj\webStore\src\js\components\pageContainer133596627594545909 1
+74D:\Frontend proj\webStore\src\js\components\pageContainer\pageContainer.js133596627791081850 0
+55D:\Frontend proj\webStore\src\js\components\productCard133596628838982005 1
+71D:\Frontend proj\webStore\src\js\components\productCard\productCard.css133596629571893948 0
+58D:\Frontend proj\webStore\src\js\components\navigationLink133596640777734166 1
+56D:\Frontend proj\webStore\src\js\components\logo\logo.js133596652218148979 0
+49D:\Frontend proj\webStore\src\assets\img\logo.svg133596649203959822 0
+51D:\Frontend proj\webStore\dist\notFound.4f16eca9.js133596652992467197 0
+48D:\Frontend proj\webStore\dist\main.0947f4d1.css133596652992467197 0
+54D:\Frontend proj\webStore\dist\product.32ff8da9.js.map133596652992487135 0
+55D:\Frontend proj\webStore\dist\notFound.4f16eca9.js.map133596652992487135 0
+52D:\Frontend proj\webStore\dist\main.0947f4d1.css.map133596652992487135 0
+47D:\Frontend proj\webStore\dist\main.00ff3c8c.js133596652992497096 0
+53D:\Frontend proj\webStore\dist\basket.690031ab.js.map133596652992507064 0
+41D:\Frontend proj\webStore\dist\index.html133596652992526997 0
+50D:\Frontend proj\webStore\dist\basket.45fcb16d.css133596652992546936 0
+49D:\Frontend proj\webStore\dist\index.4ee4707b.css133596652992546936 0
+54D:\Frontend proj\webStore\dist\basket.45fcb16d.css.map133596652992556906 0
+55D:\Frontend proj\webStore\dist\catalog.f682593a.css.map133596652992576835 0
+52D:\Frontend proj\webStore\dist\notFound.56fd5e51.css133596652992596773 0
+55D:\Frontend proj\webStore\dist\product.0009d6e3.css.map133596652992616701 0
+52D:\Frontend proj\webStore\dist\order.16121d68.js.map133596652992616701 0
+52D:\Frontend proj\webStore\dist\index.18dbc454.js.map133596653536729788 0

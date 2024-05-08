@@ -1,5 +1,5 @@
-import { getMainTitle } from '/src/js/components/mainTitle.js';
-import { getDesc } from '/src/js/components/desk.js';
+import { getMainTitle } from '/src/js/components/mainTitle/mainTitle.js';
+import { getDesc } from '/src/js/components/desk/desk.js';
 
 //Страница продукта
 export function getProductPage(title) {

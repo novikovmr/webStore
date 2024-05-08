@@ -1,0 +1,22 @@
+/* HEADER */
+
+.header {
+    
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER__NAV */
+.header__navigation {
+    display: flex;
+    
+}
+
+.header__logo {
+    align-self: center;
+}

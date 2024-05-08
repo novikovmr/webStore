@@ -1,0 +1,19 @@
+/* PRODUCT CARD */
+
+.product-list__item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #a8a8a8;
+    padding: 20px;
+}
+
+.product-list__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.product-list__price {
+    margin-bottom: 15px;
+    font-size: 21px;
+}

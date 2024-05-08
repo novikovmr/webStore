@@ -1,7 +1,7 @@
 import { router } from "/src/js/main.js";
 
-import { getMainTitle } from '/src/js/components/mainTitle.js';
-import { getDesc } from '/src/js/components/desk.js';
+import { getMainTitle } from '/src/js/components/mainTitle/mainTitle.js';
+import { getDesc } from '/src/js/components/desk/desk.js';
 
 //Страница с корзиной
 export function getBasketPage() {

@@ -58,26 +58,9 @@ body {
     outline-color: #2ea2a8;
 }
 
-/* HEADER */
-
-.header {
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 20px;
-}
-
-/* HEADER__NAV */
-.navigation {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 /* MAIN */
 
-.page-container {
-    
-}
+
 
 .page {
     background-color: #fff;
@@ -85,18 +68,6 @@ body {
     padding-bottom: 20px;
 }
 
-/* Главный заголовок */
-.main-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-/* Описание */
-.desc {
-    margin-top: 0;
-    margin-bottom: 0;
-    
-}
 
 /* PRODUCT LIST */
 
@@ -106,22 +77,4 @@ body {
     gap: 20px;
 }
 
-/* PRODUCT CARD */
-
-.product-list__item {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #a8a8a8;
-    padding: 20px;
-}
-
-.product-list__title {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 26px;
-}
-
-.product-list__price {
-    margin-bottom: 15px;
-    font-size: 21px;
-}
+ 

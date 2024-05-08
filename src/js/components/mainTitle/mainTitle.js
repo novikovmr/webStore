@@ -1,3 +1,5 @@
+import "./mainTitle.css";
+
 // Создание главного заголовка
 export function getMainTitle(text) {
     const title = document.createElement("h1");
