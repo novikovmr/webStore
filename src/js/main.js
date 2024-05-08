@@ -19,6 +19,7 @@ router.on('/', async () => {
     const pageModuleMain = await import('/src/js/pages/main.js');
     const mainPage = pageModuleMain.getMainPage();
     pageContainer.append(mainPage);
+    header.setActiveLink("home");
 })
 
 
@@ -28,6 +29,7 @@ router.on('/catalog', async () => {
     const pageModuleCatalog = await import('/src/js/pages/catalog.js');
     const catalogPage = pageModuleCatalog.getCatalogPage();
     pageContainer.append(catalogPage);
+    header.setActiveLink("catalog");
 })
 
 //Продукт
@@ -36,6 +38,7 @@ router.on('/product/:title', async ({data}) => {
     const pageModuleBasket = await import('/src/js/pages/product.js');
     const productPage = pageModuleBasket.getProductPage(data.title);
     pageContainer.append(productPage);
+    header.setActiveLink();
 })
 
 //Корзина
@@ -44,6 +47,7 @@ router.on('/basket', async () => {
     const pageModuleProduct = await import('/src/js/pages/basket.js');
     const basketPage = pageModuleProduct.getBasketPage();
     pageContainer.append(basketPage);
+    header.setActiveLink("basket");
 })
 
 //Оформление
@@ -58,6 +62,7 @@ router.on('/order', async () => {
     const pageModuleOrder = await import('/src/js/pages/order.js');
     const orderPage = pageModuleOrder.getOrderPage();
     pageContainer.append(orderPage);
+    header.setActiveLink();
 })
 
 //Страница не найдена
@@ -67,8 +72,9 @@ router.notFound(async () => {
     const pageNotFound = await import('/src/js/pages/notFound.js');
     const notFoundPage = pageNotFound.getNotFoundPage();
     pageContainer.append(notFoundPage);
+    header.setActiveLink();
 })
 
 router.resolve();
 
-app.append(header, pageContainer);
+app.append(header.header, pageContainer);

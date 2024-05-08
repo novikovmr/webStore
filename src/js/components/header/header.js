@@ -2,6 +2,7 @@ import { router } from "/src/js/main.js";
 import { getNavLink } from "/src/js/components/navigationLink/navLink";
 import "./header.css";
 import { getLogo } from "/src/js/components/logo/logo";
+import { getBasketBtn } from "/src/js/components/basketBtn/basketBtn";
 
 
 // Создать шапку
@@ -18,16 +19,34 @@ export function getHeader() {
     const nav = document.createElement("nav");
     nav.classList.add("navigation", "header__navigation");
 
-    //Создаем кнопки навигации
-    let link1 = getNavLink("/", "Главная страница"); 
-    let link2 = getNavLink("/catalog", "Каталог"); 
-    let link3 = getNavLink("/basket", "Корзина"); 
+    const basketBtn = getBasketBtn();
 
+    const links = {
+        "home": getNavLink("/", "Главная страница"),
+        "catalog" : getNavLink("/catalog", "Каталог"),
+        "basket" : basketBtn,
+    }
 
-    nav.append(link1, link2, link3);
-    container.append(logo, nav);
+    for (const oneLink in links) {
+        nav.append(links[oneLink]);
+    }
+
+    const setActiveLink = function(link = "") {
+        for (const oneLink in links) {
+            links[oneLink].classList.remove("active")
+        }
+        if (link !=="") {
+            links[link].classList.add("active");
+        }
+    
+    }
+
+    container.append(logo, nav, basketBtn);
 
     header.append(container);
     
-    return header;
+    return {
+        header,
+        setActiveLink
+    };
 }

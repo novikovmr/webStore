@@ -602,6 +602,7 @@ router.on("/", async ()=>{
     const pageModuleMain = await require("76e43f5098be4a51");
     const mainPage = pageModuleMain.getMainPage();
     pageContainer.append(mainPage);
+    header.setActiveLink("home");
 });
 //Каталог
 router.on("/catalog", async ()=>{
@@ -609,6 +610,7 @@ router.on("/catalog", async ()=>{
     const pageModuleCatalog = await require("c7fcb629e5c1095b");
     const catalogPage = pageModuleCatalog.getCatalogPage();
     pageContainer.append(catalogPage);
+    header.setActiveLink("catalog");
 });
 //Продукт
 router.on("/product/:title", async ({ data })=>{
@@ -616,6 +618,7 @@ router.on("/product/:title", async ({ data })=>{
     const pageModuleBasket = await require("17e44ed2f03d434c");
     const productPage = pageModuleBasket.getProductPage(data.title);
     pageContainer.append(productPage);
+    header.setActiveLink();
 });
 //Корзина
 router.on("/basket", async ()=>{
@@ -623,6 +626,7 @@ router.on("/basket", async ()=>{
     const pageModuleProduct = await require("dd26f383febd9266");
     const basketPage = pageModuleProduct.getBasketPage();
     pageContainer.append(basketPage);
+    header.setActiveLink("basket");
 });
 //Оформление
 router.on("/order", async ()=>{
@@ -632,6 +636,7 @@ router.on("/order", async ()=>{
     const pageModuleOrder = await require("f5ba9bb331db9114");
     const orderPage = pageModuleOrder.getOrderPage();
     pageContainer.append(orderPage);
+    header.setActiveLink();
 });
 //Страница не найдена
 router.notFound(async ()=>{
@@ -639,9 +644,10 @@ router.notFound(async ()=>{
     const pageNotFound = await require("f1ed06dc22f0a59b");
     const notFoundPage = pageNotFound.getNotFoundPage();
     pageContainer.append(notFoundPage);
+    header.setActiveLink();
 });
 router.resolve();
-app.append(header, pageContainer);
+app.append(header.header, pageContainer);
 
 },{"navigo":"fuSlc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","76e43f5098be4a51":"01i3a","c7fcb629e5c1095b":"8Po7u","17e44ed2f03d434c":"j0lMr","dd26f383febd9266":"iSaJK","f5ba9bb331db9114":"ah6Bo","f1ed06dc22f0a59b":"2UnFM","/src/js/components/header/header.js":"k3piG","/src/js/components/pageContainer/pageContainer.js":"ht0nH"}],"fuSlc":[function(require,module,exports) {
 !function(t, n) {
@@ -1399,6 +1405,7 @@ var _mainJs = require("/src/js/main.js");
 var _navLink = require("/src/js/components/navigationLink/navLink");
 var _headerCss = require("./header.css");
 var _logo = require("/src/js/components/logo/logo");
+var _basketBtn = require("/src/js/components/basketBtn/basketBtn");
 function getHeader() {
     const header = document.createElement("header");
     header.classList.add("header");
@@ -1408,17 +1415,26 @@ function getHeader() {
     logo.classList.add("header__logo");
     const nav = document.createElement("nav");
     nav.classList.add("navigation", "header__navigation");
-    //Создаем кнопки навигации
-    let link1 = (0, _navLink.getNavLink)("/", "\u0413\u043B\u0430\u0432\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430");
-    let link2 = (0, _navLink.getNavLink)("/catalog", "\u041A\u0430\u0442\u0430\u043B\u043E\u0433");
-    let link3 = (0, _navLink.getNavLink)("/basket", "\u041A\u043E\u0440\u0437\u0438\u043D\u0430");
-    nav.append(link1, link2, link3);
-    container.append(logo, nav);
+    const basketBtn = (0, _basketBtn.getBasketBtn)();
+    const links = {
+        "home": (0, _navLink.getNavLink)("/", "\u0413\u043B\u0430\u0432\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430"),
+        "catalog": (0, _navLink.getNavLink)("/catalog", "\u041A\u0430\u0442\u0430\u043B\u043E\u0433"),
+        "basket": basketBtn
+    };
+    for(const oneLink in links)nav.append(links[oneLink]);
+    const setActiveLink = function(link = "") {
+        for(const oneLink in links)links[oneLink].classList.remove("active");
+        if (link !== "") links[link].classList.add("active");
+    };
+    container.append(logo, nav, basketBtn);
     header.append(container);
-    return header;
+    return {
+        header,
+        setActiveLink
+    };
 }
 
-},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./header.css":"39x7f","/src/js/components/navigationLink/navLink":"7Dxca","/src/js/components/logo/logo":"3UqdW"}],"39x7f":[function() {},{}],"7Dxca":[function(require,module,exports) {
+},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./header.css":"39x7f","/src/js/components/navigationLink/navLink":"7Dxca","/src/js/components/logo/logo":"3UqdW","/src/js/components/basketBtn/basketBtn":"fnQNK"}],"39x7f":[function() {},{}],"7Dxca":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getNavLink", ()=>getNavLink);
@@ -1454,7 +1470,31 @@ function getLogo() {
 },{"./logo.css":"fgPjk","/src/assets/img/logo.svg":"1diId","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fgPjk":[function() {},{}],"1diId":[function(require,module,exports) {
 module.exports = require("5b3aa14cd0d9bc14").getBundleURL("10Mjw") + "logo.e1e57082.svg" + "?" + Date.now();
 
-},{"5b3aa14cd0d9bc14":"lgJ39"}],"ht0nH":[function(require,module,exports) {
+},{"5b3aa14cd0d9bc14":"lgJ39"}],"fnQNK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getBasketBtn", ()=>getBasketBtn);
+var _main = require("/src/js/main");
+var _basketBtnCss = require("./basketBtn.css");
+//bundle-text: - инструкция для сборщика 
+var _basketSvg = require("bundle-text:/src/assets/img/basket.svg");
+var _basketSvgDefault = parcelHelpers.interopDefault(_basketSvg);
+function getBasketBtn() {
+    const basketBtn = document.createElement("a");
+    basketBtn.href = "/basket";
+    basketBtn.classList.add("basket-btn");
+    basketBtn.innerHTML = (0, _basketSvgDefault.default);
+    basketBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _main.router).navigate("/basket");
+    });
+    return basketBtn;
+}
+
+},{"./basketBtn.css":"c11TG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","bundle-text:/src/assets/img/basket.svg":"6V9LR","/src/js/main":"1SICI"}],"c11TG":[function() {},{}],"6V9LR":[function(require,module,exports) {
+module.exports = "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\r\n<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->\r\n<svg fill=\"#000000\" height=\"800px\" width=\"800px\" version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 189.948 189.948\" xml:space=\"preserve\">\r\n<g>\r\n\t<g>\r\n\t\t<g>\r\n\t\t\t<path d=\"M164.613,56.66L132.259,9.34c-2.371-3.467-7.106-4.357-10.576-1.986c-3.469,2.374-4.357,7.106-1.986,10.576\r\n\t\t\t\tl26.437,38.659H43.815L70.247,17.93c2.374-3.469,1.484-8.202-1.986-10.576C64.792,4.98,60.057,5.873,57.688,9.34L25.334,56.66\r\n\t\t\t\tC11.248,57.375,0,69.026,0,83.29c0,7.033,2.787,13.69,7.74,18.682l10.708,63.311c0.378,10.343,8.91,18.641,19.341,18.641h114.367\r\n\t\t\t\tc10.431,0,18.963-8.296,19.341-18.641l10.708-63.308c4.953-4.994,7.743-11.651,7.743-18.684\r\n\t\t\t\tC189.947,69.029,178.699,57.375,164.613,56.66z M170.373,92.179l-2.252,1.811l-11.722,69.306l-0.107,1.268\r\n\t\t\t\tc0,2.28-1.854,4.139-4.137,4.139H37.789c-2.283,0-4.139-1.856-4.139-4.139L21.821,93.992l-2.25-1.811\r\n\t\t\t\tc-2.77-2.229-4.357-5.471-4.357-8.894c0-6.333,5.148-11.481,11.476-11.481h136.558c6.328,0,11.476,5.151,11.476,11.481\r\n\t\t\t\tC174.73,86.713,173.143,89.955,170.373,92.179z\"></path>\r\n\t\t\t<path d=\"M131.793,91.687c-4.202,0-7.609,3.406-7.609,7.609v53.333c0,4.202,3.406,7.609,7.609,7.609s7.609-3.406,7.609-7.609\r\n\t\t\t\tV99.295C139.401,95.093,135.995,91.687,131.793,91.687z\"></path>\r\n\t\t\t<path d=\"M94.975,91.687c-4.202,0-7.609,3.406-7.609,7.609v53.333c0,4.202,3.406,7.609,7.609,7.609\r\n\t\t\t\tc4.202,0,7.609-3.406,7.609-7.609V99.295C102.584,95.093,99.177,91.687,94.975,91.687z\"></path>\r\n\t\t\t<path d=\"M58.152,91.687c-4.202,0-7.609,3.406-7.609,7.609v53.333c0,4.202,3.406,7.609,7.609,7.609s7.609-3.406,7.609-7.609\r\n\t\t\t\tV99.295C65.763,95.093,62.355,91.687,58.152,91.687z\"></path>\r\n\t\t</g>\r\n\t</g>\r\n</g>\r\n</svg>";
+
+},{}],"ht0nH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // Контейнер для страниц
