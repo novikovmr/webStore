@@ -8,16 +8,8 @@ export function getMainPage() {
 
     const mainTitle = getMainTitle("Главная страница");
 
-    const list = document.createElement("ul");
-    list.classList.add("product-list", "list-reset")
 
 
-    list.append(
-        getProductCard("Товар_1", 400),
-        getProductCard("Товар_2", 200),
-        getProductCard("Товар_3", 500),
-    )
-
-    page.append(mainTitle, list);
+    page.append(mainTitle);
     return page;
 }

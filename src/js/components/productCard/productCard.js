@@ -2,16 +2,16 @@ import { router } from "/src/js/main.js";
 import "./productCard.css";
 
 //Карточка продукта
-export function getProductCard(title, price) {
+export function getProductCard(product) {
     const item = document.createElement("li");
-    item.classList.add("product-list__item");
+    item.classList.add("product");
 
     const productTitle = document.createElement("h2");
-    productTitle.classList.add("product-list__title");
+    productTitle.classList.add("product__title");
     
 
     let productLink = document.createElement("a");
-    productLink.textContent = title;
+    productLink.textContent = product.title;
     productLink.href = ""
     productLink.setAttribute("data-navigo", "true");
 
@@ -23,8 +23,8 @@ export function getProductCard(title, price) {
     productTitle.append(productLink);
 
     const productPrice = document.createElement("strong");
-    productPrice.classList.add("product-list__price");
-    productPrice.textContent = `${price} руб`;
+    productPrice.classList.add("product__price");
+    productPrice.textContent = `${product.price} $`;
 
     const addBasketBtn = document.createElement("button");
     addBasketBtn.classList.add("btn");

@@ -1,6 +1,33 @@
+.product-list__list {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+}
+
 .main-title {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.product {
+  border: 2px solid #a8a8a8;
+  flex-direction: column;
+  padding: 20px;
+  display: flex;
+}
+
+.product__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.product__price {
+  margin-bottom: 15px;
+  font-size: 21px;
 }
 
 .desc {

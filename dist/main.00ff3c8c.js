@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"afTuC":[function(require,module,exports) {
+})({"hFWdt":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -594,10 +594,7 @@ function getMainPage() {
     const page = document.createElement("div");
     page.classList.add("page", "main-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("\u0413\u043B\u0430\u0432\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430");
-    const list = document.createElement("ul");
-    list.classList.add("product-list", "list-reset");
-    list.append((0, _productCardJs.getProductCard)("\u0422\u043E\u0432\u0430\u0440_1", 400), (0, _productCardJs.getProductCard)("\u0422\u043E\u0432\u0430\u0440_2", 200), (0, _productCardJs.getProductCard)("\u0422\u043E\u0432\u0430\u0440_3", 500));
-    page.append(mainTitle, list);
+    page.append(mainTitle);
     return page;
 }
 
@@ -621,13 +618,13 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
 var _mainJs = require("/src/js/main.js");
 var _productCardCss = require("./productCard.css");
-function getProductCard(title, price) {
+function getProductCard(product) {
     const item = document.createElement("li");
-    item.classList.add("product-list__item");
+    item.classList.add("product");
     const productTitle = document.createElement("h2");
-    productTitle.classList.add("product-list__title");
+    productTitle.classList.add("product__title");
     let productLink = document.createElement("a");
-    productLink.textContent = title;
+    productLink.textContent = product.title;
     productLink.href = "";
     productLink.setAttribute("data-navigo", "true");
     productLink.addEventListener("click", function(event) {
@@ -636,8 +633,8 @@ function getProductCard(title, price) {
     });
     productTitle.append(productLink);
     const productPrice = document.createElement("strong");
-    productPrice.classList.add("product-list__price");
-    productPrice.textContent = `${price} \u{440}\u{443}\u{431}`;
+    productPrice.classList.add("product__price");
+    productPrice.textContent = `${product.price} $`;
     const addBasketBtn = document.createElement("button");
     addBasketBtn.classList.add("btn");
     addBasketBtn.textContent = "\u0412 \u043A\u043E\u0440\u0437\u0438\u043D\u0443";
@@ -645,6 +642,6 @@ function getProductCard(title, price) {
     return item;
 }
 
-},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productCard.css":"8FtH3"}],"8FtH3":[function() {},{}]},["afTuC"], null, "parcelRequirede3a")
+},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productCard.css":"8FtH3"}],"8FtH3":[function() {},{}]},["hFWdt"], null, "parcelRequirede3a")
 
 //# sourceMappingURL=main.00ff3c8c.js.map

@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"65cFM":[function(require,module,exports) {
+})({"dgpTG":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -590,16 +590,18 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getCatalogPage", ()=>getCatalogPage);
 var _mainTitleJs = require("/src/js/components/mainTitle/mainTitle.js");
 var _deskJs = require("/src/js/components/desk/desk.js");
+var _productList = require("/src/js/components/productList/productList");
 function getCatalogPage() {
     const page = document.createElement("div");
     page.classList.add("page", "catalog-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("\u041A\u0430\u0442\u0430\u043B\u043E\u0433");
-    const desc = (0, _deskJs.getDesc)("\u0421\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0435");
-    page.append(mainTitle, desc);
+    const product = (0, _productList.getProductList)();
+    product.getProducts();
+    page.append(mainTitle, product.productList);
     return page;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/desk/desk.js":"dnntq","/src/js/components/mainTitle/mainTitle.js":"ki5if"}],"dnntq":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/desk/desk.js":"dnntq","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productList/productList":"lAenc"}],"dnntq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Создает описание товара
@@ -625,6 +627,66 @@ function getMainTitle(text) {
     return title;
 }
 
-},{"./mainTitle.css":"8xezA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8xezA":[function() {},{}]},["65cFM"], null, "parcelRequirede3a")
+},{"./mainTitle.css":"8xezA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8xezA":[function() {},{}],"lAenc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Компонент списка товаров
+parcelHelpers.export(exports, "getProductList", ()=>getProductList);
+var _productCardJs = require("/src/js/components/productCard/productCard.js");
+var _productListCss = require("./productList.css");
+function getProductList() {
+    const productList = document.createElement("div");
+    productList.classList.add("product-list");
+    const getProducts = async function(URI) {
+        const response = await fetch("https://fakestoreapi.com/products");
+        console.log(response);
+        const data = await response.json();
+        const list = document.createElement("ul");
+        list.classList.add("product-list__list");
+        for (const product of data){
+            console.log(product);
+            const productCard = (0, _productCardJs.getProductCard)(product);
+            list.append(productCard);
+        }
+        productList.append(list);
+    };
+    return {
+        productList,
+        getProducts
+    };
+}
+
+},{"./productList.css":"1YWjZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/productCard/productCard.js":"9WzTu"}],"1YWjZ":[function() {},{}],"9WzTu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Карточка продукта
+parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
+var _mainJs = require("/src/js/main.js");
+var _productCardCss = require("./productCard.css");
+function getProductCard(product) {
+    const item = document.createElement("li");
+    item.classList.add("product");
+    const productTitle = document.createElement("h2");
+    productTitle.classList.add("product__title");
+    let productLink = document.createElement("a");
+    productLink.textContent = product.title;
+    productLink.href = "";
+    productLink.setAttribute("data-navigo", "true");
+    productLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _mainJs.router).navigate(`/product/${title}`);
+    });
+    productTitle.append(productLink);
+    const productPrice = document.createElement("strong");
+    productPrice.classList.add("product__price");
+    productPrice.textContent = `${product.price} $`;
+    const addBasketBtn = document.createElement("button");
+    addBasketBtn.classList.add("btn");
+    addBasketBtn.textContent = "\u0412 \u043A\u043E\u0440\u0437\u0438\u043D\u0443";
+    item.append(productTitle, productPrice, addBasketBtn);
+    return item;
+}
+
+},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productCard.css":"8FtH3"}],"8FtH3":[function() {},{}]},["dgpTG"], null, "parcelRequirede3a")
 
 //# sourceMappingURL=catalog.bae1f746.js.map
