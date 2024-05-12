@@ -10,3 +10,11 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
+.productList__msg {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: grey;
+    padding: 20px 0;
+}

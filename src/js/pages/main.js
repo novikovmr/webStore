@@ -1,5 +1,6 @@
-import { getProductCard } from '/src/js/components/productCard/productCard.js';
 import { getMainTitle } from '/src/js/components/mainTitle/mainTitle.js';
+import { getProductList } from '/src/js/components/productList/productList';
+import { URL } from '/src/js/config';
 
 //Главная страница
 export function getMainPage() {
@@ -8,8 +9,9 @@ export function getMainPage() {
 
     const mainTitle = getMainTitle("Главная страница");
 
+    const product = getProductList();
+    product.getProducts(`${URL}/products?limit=4`);
 
-
-    page.append(mainTitle);
+    page.append(mainTitle, product.productList);
     return page;
 }

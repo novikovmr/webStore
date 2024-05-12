@@ -588,17 +588,20 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Главная страница
 parcelHelpers.export(exports, "getMainPage", ()=>getMainPage);
-var _productCardJs = require("/src/js/components/productCard/productCard.js");
 var _mainTitleJs = require("/src/js/components/mainTitle/mainTitle.js");
+var _productList = require("/src/js/components/productList/productList");
+var _config = require("/src/js/config");
 function getMainPage() {
     const page = document.createElement("div");
     page.classList.add("page", "main-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("\u0413\u043B\u0430\u0432\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430");
-    page.append(mainTitle);
+    const product = (0, _productList.getProductList)();
+    product.getProducts(`${(0, _config.URL)}/products?limit=4`);
+    page.append(mainTitle, product.productList);
     return page;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productCard/productCard.js":"9WzTu"}],"ki5if":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productList/productList":"lAenc","/src/js/config":"k5Hzs"}],"ki5if":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // Создание главного заголовка
@@ -611,7 +614,44 @@ function getMainTitle(text) {
     return title;
 }
 
-},{"./mainTitle.css":"8xezA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8xezA":[function() {},{}],"9WzTu":[function(require,module,exports) {
+},{"./mainTitle.css":"8xezA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8xezA":[function() {},{}],"lAenc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Компонент списка товаров
+parcelHelpers.export(exports, "getProductList", ()=>getProductList);
+var _productCardJs = require("/src/js/components/productCard/productCard.js");
+var _productListCss = require("./productList.css");
+function getProductList() {
+    const productList = document.createElement("div");
+    productList.classList.add("product-list");
+    const getProducts = async function(URI) {
+        try {
+            const response = await fetch(URI);
+            if (response.status === 404) throw new Error("\u0422\u043E\u0432\u0430\u0440\u044B \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u044B");
+            console.log(response);
+            const data = await response.json();
+            const list = document.createElement("ul");
+            list.classList.add("product-list__list");
+            for (const product of data){
+                console.log(product);
+                const productCard = (0, _productCardJs.getProductCard)(product);
+                list.append(productCard);
+            }
+            productList.append(list);
+        } catch (error) {
+            const msg = document.createElement("span");
+            msg.classList.add("productList__msg");
+            msg.textContent = error.message;
+            productList.append(msg);
+        }
+    };
+    return {
+        productList,
+        getProducts
+    };
+}
+
+},{"./productList.css":"1YWjZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/productCard/productCard.js":"9WzTu"}],"1YWjZ":[function() {},{}],"9WzTu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Карточка продукта
@@ -623,25 +663,34 @@ function getProductCard(product) {
     item.classList.add("product");
     const productTitle = document.createElement("h2");
     productTitle.classList.add("product__title");
+    const productPreview = document.createElement("img");
+    productPreview.classList.add("product__prewiew");
+    productPreview.src = product.image;
     let productLink = document.createElement("a");
     productLink.textContent = product.title;
     productLink.href = "";
     productLink.setAttribute("data-navigo", "true");
     productLink.addEventListener("click", function(event) {
         event.preventDefault();
-        (0, _mainJs.router).navigate(`/product/${title}`);
+        (0, _mainJs.router).navigate(`/product/${product.id}`);
     });
     productTitle.append(productLink);
     const productPrice = document.createElement("strong");
     productPrice.classList.add("product__price");
     productPrice.textContent = `${product.price} $`;
     const addBasketBtn = document.createElement("button");
-    addBasketBtn.classList.add("btn");
+    addBasketBtn.classList.add("btn", "product__add-basket");
     addBasketBtn.textContent = "\u0412 \u043A\u043E\u0440\u0437\u0438\u043D\u0443";
-    item.append(productTitle, productPrice, addBasketBtn);
+    item.append(productPreview, productTitle, productPrice, addBasketBtn);
     return item;
 }
 
-},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productCard.css":"8FtH3"}],"8FtH3":[function() {},{}]},["hFWdt"], null, "parcelRequirede3a")
+},{"/src/js/main.js":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productCard.css":"8FtH3"}],"8FtH3":[function() {},{}],"k5Hzs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "URL", ()=>URL);
+const URL = "https://fakestoreapi.com";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["hFWdt"], null, "parcelRequirede3a")
 
 //# sourceMappingURL=main.00ff3c8c.js.map

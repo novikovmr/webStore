@@ -10,6 +10,11 @@ export function getProductCard(product) {
     productTitle.classList.add("product__title");
     
 
+    const productPreview = document.createElement("img");
+    productPreview.classList.add("product__prewiew");
+    productPreview.src = product.image;
+    
+
     let productLink = document.createElement("a");
     productLink.textContent = product.title;
     productLink.href = ""
@@ -17,7 +22,7 @@ export function getProductCard(product) {
 
     productLink.addEventListener("click", function(event){
         event.preventDefault();
-        router.navigate(`/product/${title}`);
+        router.navigate(`/product/${product.id}`);
     })
 
     productTitle.append(productLink);
@@ -27,9 +32,9 @@ export function getProductCard(product) {
     productPrice.textContent = `${product.price} $`;
 
     const addBasketBtn = document.createElement("button");
-    addBasketBtn.classList.add("btn");
+    addBasketBtn.classList.add("btn", "product__add-basket");
     addBasketBtn.textContent = "В корзину";
 
-    item.append(productTitle, productPrice, addBasketBtn);
+    item.append(productPreview, productTitle, productPrice, addBasketBtn);
     return item;
 }

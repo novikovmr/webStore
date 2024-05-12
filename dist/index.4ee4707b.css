@@ -37,7 +37,7 @@ body {
   transition: background-color .3s, outline-color .3;
   background-color: #2ea2a8;
   border: none;
-  border-radius: 0;
+  border-radius: 15px;
   outline: 1px solid #0000;
   padding: 15px 30px;
   display: inline-block;

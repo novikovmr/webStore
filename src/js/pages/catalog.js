@@ -1,6 +1,6 @@
 import { getMainTitle } from '/src/js/components/mainTitle/mainTitle.js';
-import { getDesc } from '/src/js/components/desk/desk.js';
 import { getProductList } from '/src/js/components/productList/productList';
+import { URL } from '/src/js/config';
 
 //Страница с каталогом
 export function getCatalogPage() {
@@ -10,7 +10,7 @@ export function getCatalogPage() {
     const mainTitle = getMainTitle("Каталог");
 
     const product = getProductList();
-    product.getProducts();
+    product.getProducts(`${URL}/products`);
 
 
     page.append(mainTitle, product.productList);

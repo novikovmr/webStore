@@ -8,22 +8,38 @@ export function getProductList() {
     productList.classList.add("product-list");
 
     const getProducts = async function(URI) {
-        const response = await fetch("https://fakestoreapi.com/products");
-        console.log(response);
 
-        const data = await response.json();
+        try {
+            const response = await fetch(URI);
 
-        const list = document.createElement("ul");
-        list.classList.add("product-list__list");
+            if(response.status === 404) {
+                throw new Error("Товары не найдены");
+            }
+
+            console.log(response);
+
+            const data = await response.json();
+
+            const list = document.createElement("ul");
+            list.classList.add("product-list__list");
 
 
-        for (const product of data) {
-            console.log(product);
-            const productCard = getProductCard(product);
-            list.append(productCard);
+            for (const product of data) {
+                console.log(product);
+                const productCard = getProductCard(product);
+                list.append(productCard);
+            }
+
+            productList.append(list);
+        } catch (error) {
+            const msg = document.createElement("span");
+            msg.classList.add("productList__msg");
+            msg.textContent = error.message;
+            productList.append(msg);
+
         }
 
-        productList.append(list);
+        
     }
 
     return {
